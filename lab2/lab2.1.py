@@ -49,7 +49,7 @@ def LatexMatrix(matrix):
     ltx += r'\end{array}\right]'
     return ltx
 
-# Obliczanie parametrów θ krzywej regresyjnej
+# Obliczanie parametrów θ krzywej regresyjnej dla alpha 0.001, 0.01 i 0.1
 best_theta_001, log_001 = gradient_descent(h, funkcja_kosztu, [0.0, 0.0], x, y, alpha=0.001, eps=0.0000001)
 best_theta_01, log_01 = gradient_descent(h, funkcja_kosztu, [0.0, 0.0], x, y, alpha=0.01, eps=0.0000001)
 best_theta_1, log_1 = gradient_descent(h, funkcja_kosztu, [0.0, 0.0], x, y, alpha=0.1, eps=0.0000001)
