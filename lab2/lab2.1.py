@@ -102,7 +102,7 @@ fig = regdots(x, y)
 regline(fig, h, best_theta_001, x)
 legend(fig)
 
-# Przedidywana liczba włamań dla 50, 100, 200 pożarów
+# Przewidywana liczba włamań dla 50, 100, 200 pożarów
 predicted_y = h(best_theta_001, 50)
 print('50 pożarów: ' + str(predicted_y))
 predicted_y = h(best_theta_001, 100)
