@@ -70,8 +70,8 @@ def regdots(x, y):
     fig.subplots_adjust(left=0.1, right=0.9, bottom=0.1, top=0.9)
     ax.scatter(x, y, c='r', s=50, label='Dane')
     
-    ax.set_xlabel(u'Wielkość miejscowości [dzies. tys. mieszk.]')
-    ax.set_ylabel(u'Dochód firmy [dzies. tys. dolarów]')
+    ax.set_xlabel(u'Liczba pożarów')
+    ax.set_ylabel(u'Liczba włamań')
     ax.margins(.05, .05)
     pl.ylim(min(y) - 1, max(y) + 1)
     pl.xlim(min(x) - 1, max(x) + 1)
