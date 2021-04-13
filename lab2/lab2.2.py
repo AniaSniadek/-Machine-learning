@@ -10,16 +10,12 @@ for xi, yi in reader:
     x.append(float(xi))
     y.append(float(yi))
 
-# Tworzenie modelu regresji liniowej
-regression = linear_model.LinearRegression()
-
-# Trenowanie modelu
-regression.fit(np.array(x).reshape(-1, 1), y)
+regression = linear_model.LinearRegression().fit(np.array(x).reshape(-1, 1), y)
 
 # Przewidywana liczba włamań dla 50, 100, 200 pożarów
-predicted = regression.predict(np.array([50]).reshape(-1,1))
+predicted = regression.predict(np.array([[50]]))
 print('50 pożarów: ' + str(predicted[0]))
-predicted = regression.predict(np.array([100]).reshape(-1,1))
+predicted = regression.predict(np.array([[100]]))
 print('100 pożarów: ' + str(predicted[0]))
-predicted = regression.predict(np.array([200]).reshape(-1,1))
+predicted = regression.predict(np.array([[200]]))
 print('200 pożarów: ' + str(predicted[0]))
